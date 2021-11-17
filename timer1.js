@@ -18,4 +18,3 @@ const beepingTimer = process.argv.slice(2);
 for (let input of beepingTimer) {
   timer(input);
 }
-s
