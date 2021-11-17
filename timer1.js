@@ -4,17 +4,18 @@ const timer = function(time) {
     return null;
   }
 
-  // the actual timer 
   setTimeout(() => {
+    // This is where it makes the beep sound
     process.stdout.write('\x07');
   }, time * 1000);
 };
 
 // returns array containing arguments
-const argv = process.argv.slice(2);
+const beepingTimer = process.argv.slice(2);
 
 
 // iterates over the arguments 
-for (let i of argv) {
-  timer(i);
+for (let input of beepingTimer) {
+  timer(input);
 }
+s
